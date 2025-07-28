@@ -136,7 +136,7 @@ def render_history():
 
 def pagina_chat():
     st.set_page_config(page_title="🎯 Monitoramento de Campanhas", layout="wide")
-    st.header("🤖 Bem‑vindo ao Estagiário Inteligente", divider=True)
+    st.header("🤖 Olá, sou seu analista de campanhas (estagiário mas isso é um detalhe)", divider=True)
 
     # Estado inicial
     if "agent" not in st.session_state:
