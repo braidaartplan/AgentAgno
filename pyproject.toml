@@ -8,6 +8,7 @@ dependencies = [
     "agno>=1.7.2",
     "dedent>=0.5",
     "fastapi>=0.116.1",
+    "markdown>=3.8.2",
     "openai>=1.96.0",
     "pymysql>=1.1.1",
     "python-dotenv>=1.1.1",
