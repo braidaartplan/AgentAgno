@@ -5,3 +5,5 @@ pandas
 pypdf
 agno
 openai
+fastapi
+aiofiles 
