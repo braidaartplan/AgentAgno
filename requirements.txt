@@ -2,7 +2,7 @@ streamlit
 python-dotenv
 pymysql
 pandas
-pypdf
+pypdf>=4.2.0
 agno
 openai
 fastapi
