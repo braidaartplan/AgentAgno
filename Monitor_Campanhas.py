@@ -51,7 +51,7 @@ sql_agent = Agent(
                             3. ✅ Recomendações acionáveis para otimização                       
                        """),  
     instructions=(
-                    "Sempre que precisar consultar dados, utilize a tabela Metricas, que contém as seguintes colunas:\n"
+                    "Sempre que precisar consultar dados, utilize a VIEW Metricas, que contém as seguintes colunas:\n"
                     "- Cliente: Nome do cliente responsável pela campanha. Exemplos incluem: Eletrobras, BNDES, CNI, SEBRAE e SEBRAE RJ.\n"
                     "- Campanha: Nome da campanha. Nem todas as campanhas estão ativas atualmente.\n"
                     "- Veiculo: Plataforma em que os anúncios foram veiculados, como: Instagram, Facebook, TikTok, Pinterest, LinkedIn, Google Discovery, YouTube, entre outras.\n"

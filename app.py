@@ -79,10 +79,25 @@ def init_agent() -> Agent:
     )
 
     instructions = (
-        "Sempre que precisar consultar dados, utilize a tabela Metricas, com colunas: Cliente, Campanha,"
-        " Veiculo, Data, Impressoes, Investimento, Visualizacoes_ate_100, Video_Play, Formato, Criativo,"
-        " Objetivo, Editoria, Link_do_Anuncio."
-    )
+                    "Sempre que precisar consultar dados, utilize a VIEW Metricas, que contém as seguintes colunas:\n"
+                    "- Cliente: Nome do cliente responsável pela campanha. Exemplos incluem: Eletrobras, BNDES, CNI, SEBRAE e SEBRAE RJ.\n"
+                    "- Campanha: Nome da campanha. Nem todas as campanhas estão ativas atualmente.\n"
+                    "- Veiculo: Plataforma em que os anúncios foram veiculados, como: Instagram, Facebook, TikTok, Pinterest, LinkedIn, Google Discovery, YouTube, entre outras.\n"
+                    "- Data: Data de ocorrência do registro.\n"
+                    "- Impressoes: Quantidade de vezes que o anúncio foi exibido (impressões).\n"
+                    "- Investimento: Valor investido no anúncio nesse dia específico.\n"
+                    "- Visualizacoes_ate_100: Número de visualizações que chegaram até o fim do vídeo (100%).\n"
+                    "- Video_Play: Quantidade de vezes que o vídeo foi iniciado.\n"
+                    "- Formato: Tipo de formato do criativo, como: Card, Carrossel, Coleção, Discovery, Estático, Reels, Stories, Vídeo.\n"
+                    "- Criativo: Nome ou identificador do criativo utilizado no anúncio.\n"
+                    "- Objetivo: Objetivo da campanha, como: Alcance, Visualização, Tráfego, Engajamento, Consideração ou Conversão.\n"
+                    "- Editoria: Subdivisão editorial dentro da campanha.\n"
+                    "- Link_do_Anuncio: URL do anúncio correspondente.\n"
+                    "- Engajamento_Total: Soma de comentários, reações e compartilhamentos.\n"
+                    "- Cliques_no_Link: Número de cliques no link do anúncio.\n"
+                    "- PageViews: Número de visualizações da página de destino dos anúncios.\n"
+                    "- Tempo_Medio_de_Video: Tempo médio que os usuários assistiram ao vídeo do anúncio.\n"
+                )
 
     return Agent(
         tools=[SQLTools(db_url=DB_URL)],
@@ -95,9 +110,9 @@ def init_agent() -> Agent:
         instructions=instructions,
     )
 
-########################
-# 🖥️  Interface Streamlit
-########################
+
+# Interface Streamlit
+
 
 def render_sidebar():
     """Renderiza a barra lateral com filtros e ações utilitárias."""
