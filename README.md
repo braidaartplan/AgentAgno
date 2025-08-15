@@ -17,7 +17,7 @@ Este repositório contém a implementação de um **agente inteligente de análi
 ## 🛠️ Tecnologias utilizadas
 
 - [AGNO](https://github.com/agno-agi/agno): Framework para construção de agentes multimodais.
-- [OpenAI Chat Model](https://platform.openai.com/docs): Utilização do modelo `gpt-4.1-mini`.
+- [OpenAI Chat Model](https://platform.openai.com/docs): Utilização do modelo `gpt-5.0-mini`.
 - `SQLTools`: Conector nativo da AGNO para executar queries SQL com segurança.
 - `Playground`: Interface local de interação com agentes.
 - `.env`: Gerenciamento seguro de credenciais via `python-dotenv`.
